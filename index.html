@@ -9,8 +9,8 @@
         max-width: 800px;
         margin: 20px auto;
         padding: 0 20px;
-        font-size: 16px;
-        line-height: 1.5;
+        font-size: 18px; /* увеличили базовый шрифт */
+        line-height: 1.6; /* чуть больше для читаемости */
         color: #222;
         background-color: #fff;
       }
@@ -18,21 +18,30 @@
       /* Заголовки */
       h2 {
         margin-top: 30px;
-        font-size: 1.5rem;
+        font-size: 1.7rem; /* увеличили */
       }
 
       /* Вопросы */
       .question {
-        margin-bottom: 20px;
+        margin-bottom: 24px; /* чуть больше отступа */
       }
 
       /* Ответы */
       .answers label {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 12px; /* увеличили отступ между ответами для удобства на мобиле */
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 1.1rem; /* увеличили */
         user-select: none;
+        padding: 8px 12px; /* добавили паддинги для зоны нажатия */
+        border-radius: 6px; /* чуть скруглим для приятности */
+        transition: background-color 0.3s ease;
+      }
+
+      /* При наведении / фокусе на десктопе и при тапе на мобильных */
+      .answers label:hover,
+      .answers label:focus {
+        background-color: #f0f0f0;
       }
 
       /* Стили для правильного и неправильного ответа */
@@ -61,16 +70,18 @@
           max-width: 100%;
           margin: 10px;
           padding: 0 10px;
-          font-size: 14px;
+          font-size: 16px; /* увеличили */
         }
 
         h2 {
-          font-size: 1.3rem;
+          font-size: 1.5rem;
           margin-top: 20px;
         }
 
         .answers label {
-          font-size: 0.9rem;
+          font-size: 1.05rem; /* увеличили */
+          margin-bottom: 14px; /* еще больше пространства для тапа */
+          padding: 10px 14px; /* увеличенный паддинг для удобства */
         }
       }
 
@@ -80,16 +91,18 @@
           max-width: 700px;
           margin: 15px auto;
           padding: 0 15px;
-          font-size: 15px;
+          font-size: 17px; /* увеличили */
         }
 
         h2 {
-          font-size: 1.4rem;
+          font-size: 1.6rem;
           margin-top: 25px;
         }
 
         .answers label {
-          font-size: 0.95rem;
+          font-size: 1.05rem;
+          margin-bottom: 13px;
+          padding: 9px 13px;
         }
       }
 
@@ -99,16 +112,18 @@
           max-width: 800px;
           margin: 20px auto;
           padding: 0 20px;
-          font-size: 16px;
+          font-size: 18px;
         }
 
         h2 {
-          font-size: 1.5rem;
+          font-size: 1.7rem;
           margin-top: 30px;
         }
 
         .answers label {
-          font-size: 1rem;
+          font-size: 1.1rem;
+          margin-bottom: 12px;
+          padding: 8px 12px;
         }
       }
     </style>
